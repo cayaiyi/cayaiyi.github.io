@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>爱依个人站点</title>
+    <description>学习学习,努力努力,每天要更漂亮,哈哈哈</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 20 Sep 2017 22:00:33 +0800</pubDate>
+    <lastBuildDate>Wed, 20 Sep 2017 22:00:33 +0800</lastBuildDate>
+    <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>英语学习- python</title>
+        <description>&lt;h3 id=&quot;单词&quot;&gt;单词&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;python&lt;/strong&gt;: 解释型,面向对象的脚本语言,它的特点是优雅,明确,简单,python适合开发web网站和各种网络服务,系统工具和脚本,另外python又是一种胶水语言可以把其他语言组合包装方便使用&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;raw&lt;/strong&gt; : 粗糙的,原始的&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;list&lt;/strong&gt;:有序的集合列表&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;indexError&lt;/strong&gt;:表示索引超出范围&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;oppend&lt;/strong&gt;:附加&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;insert&lt;/strong&gt;:插入&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;pop&lt;/strong&gt;:删除&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;tuple&lt;/strong&gt;:元组,有序的列表&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;if&lt;/strong&gt;:如果&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;else&lt;/strong&gt;:否则&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;elif&lt;/strong&gt;:或者如果&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;for&lt;/strong&gt;:循环数组&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;while&lt;/strong&gt;:循环判断&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;组合命令&quot;&gt;组合命令&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;python test.py&lt;/code&gt; : test是文件名称,.py是python文件的后缀 , python 指定 脚本的执行语言是 python. 比如 linux的bash脚本,可以用 &lt;code class=&quot;highlighter-rouge&quot;&gt;sh test.sh&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;raw&lt;/code&gt; python中使用raw,主要是为了更方便的区分 正则表达式这一类有特殊符号含义的语法. raw字符串 里面的特殊符号不需要进行转义.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;语法&quot;&gt;语法&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;utf-8&lt;/code&gt;:中文编码使用#-&lt;em&gt;- coding= utf-8 -&lt;/em&gt;-&lt;/li&gt;
+  &lt;li&gt;’#’: 使用#表示注释一整行代码&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print&lt;/code&gt;:输出指定的文字,输出文字print ‘hello’;,输出数字print 1;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt;:表示一个raw字符串,前缀加r,表示这串字符串不会被转换.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;and&lt;/code&gt;两个布尔值位true,结果为true,否则结果为false&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;or&lt;/code&gt;一个布尔值为true,结果为true,否则为flase&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;not&lt;/code&gt;把true变为flase,或者把flase变为true&lt;/li&gt;
+  &lt;li&gt;Python把0、空字符串’‘和None看成 False，其他数值和非空字符串都看成 True例如 a=’’ print “hello” a or ‘python’,结果hello python&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;list&lt;/code&gt;:使用[‘xxx’,1,’xxx’]表示集合&lt;/li&gt;
+  &lt;li&gt;索引从0开始,最后一个元素用-1表示&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;oppend()&lt;/code&gt;:把新元素追加到末尾&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;insert()&lt;/code&gt;:在集合中插入新元素,insert(0,’a’)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pop()&lt;/code&gt;:删除集合最后一个元素,如果括号中加索引,删除索引并打印出删除的该索引&lt;/li&gt;
+  &lt;li&gt;替换集合中的元素语法是:变量名[索引]=替换的内容,如L=[1,2,3]  L[-1]=4&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tuple&lt;/code&gt;:不同于list的是不能替换,添加删除索引.但访问元素是一样的用中括号表示&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;单元素tuple&lt;/code&gt;:括号中必须带逗号,否则打印的结果是一个整数,或者是一个字符串,元组表示方式为t=(1,)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tuple的指向不变&lt;/code&gt;,但指向一个集合,这个集合可以替换或者删除和添加&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt;语句语法:if 表单式 : 例如if are&amp;gt;=18:&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;else&lt;/code&gt;:判断true和flase,else后面加冒号:&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;elif&lt;/code&gt;:或者如果,用于多个判断&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt;:循环集合或者元组中的每个元素,语法 for 变量名 in 集合(元组列表名)打印for定义的变量名,得到列表中的元素&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;while&lt;/code&gt;:判断循环是否结束,不能迭代集合和元组的每个元素 while 表达式 :&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 19 Sep 2017 19:10:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/09/english-python/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/english-python/</guid>
+        
+        <category>English</category>
+        
+        <category>Python</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>英语学习- Jekyll</title>
+        <description>&lt;h3 id=&quot;单词&quot;&gt;单词&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ruby : 编程语言&lt;/li&gt;
+  &lt;li&gt;gem : 用ruby写的工具包&lt;/li&gt;
+  &lt;li&gt;jekyll : 一个用于生成静态网站的工具,gem的一个工具,使用gem安装&lt;/li&gt;
+  &lt;li&gt;serve : 服务器&lt;/li&gt;
+  &lt;li&gt;build : 构建&lt;/li&gt;
+  &lt;li&gt;control : 控制, 电脑的按键&lt;/li&gt;
+  &lt;li&gt;command : 命令,电脑按键&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jekyll-组合命令&quot;&gt;jekyll 组合命令&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;jekyll serve : 启动jekyll 服务,生成本地预览的web网站&lt;/li&gt;
+  &lt;li&gt;control + c : 停止命令,比如开启了 jekyll服务,需要关闭的时候用&lt;/li&gt;
+  &lt;li&gt;jekyll build : 部署md文件,生成页面&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jekyill-新建md生成页面&quot;&gt;jekyill 新建md,生成页面&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新建md文件,一般我使用MWeb软件,在&lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt;目录下面 新建以&lt;code class=&quot;highlighter-rouge&quot;&gt;md&lt;/code&gt;结尾的文件&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;md&lt;/code&gt;文件的标题有严格的命名规范如:&lt;code class=&quot;highlighter-rouge&quot;&gt;2017-xx-xx-xxxx.md&lt;/code&gt; ,年月日-标题名称.md的格式&lt;/li&gt;
+  &lt;li&gt;添加 头部的layout节点 ,注意腰写在文章的最上面,且不要空格&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: post
+title: 自定义标题
+date: 自定义年月日,后面的不要改 00:00:00 +0300 
+description: 自定义描述信息
+img: i-rest.jpg # 可选,添加文章的预览图片名词,在`_posts的同级目录assets下面`
+tags: [English] # 添加文章的标签,比如写的单词,就添加 English 标签
+---
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;后面的就是文章的正文,基本就是markdown语法.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 19 Sep 2017 02:43:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/09/english-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/english-jekyll/</guid>
+        
+        <category>English</category>
+        
+        <category>Jekyll</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>测试工程师-简历</title>
+        <description>&lt;h3 id=&quot;个人信息&quot;&gt;个人信息&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;陈爱依&lt;/li&gt;
+  &lt;li&gt;工作年限/2年&lt;/li&gt;
+  &lt;li&gt;Email: 18701431230@163.com&lt;/li&gt;
+  &lt;li&gt;Tel: 18701431230&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;求职信息&quot;&gt;求职信息&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;期望职位: 测试工程师&lt;/li&gt;
+  &lt;li&gt;期望薪资: 面谈&lt;/li&gt;
+  &lt;li&gt;期望城市: 北京&lt;/li&gt;
+  &lt;li&gt;期望从事行业: 互联网&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;专业技能&quot;&gt;专业技能&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;需求文档的编写,用例等文档的编写与维护.&lt;/li&gt;
+  &lt;li&gt;熟悉源代码管理，&lt;strong&gt;SVN&lt;/strong&gt;、&lt;strong&gt;Git&lt;/strong&gt;的规范使用&lt;/li&gt;
+  &lt;li&gt;熟悉&lt;strong&gt;JIRA&lt;/strong&gt;,禅道等&lt;strong&gt;bug&lt;/strong&gt;管理工具的使用&lt;/li&gt;
+  &lt;li&gt;熟悉&lt;strong&gt;Charles&lt;/strong&gt;接口监测,&lt;strong&gt;Postman&lt;/strong&gt;接口验证.&lt;/li&gt;
+  &lt;li&gt;了解&lt;strong&gt;ApacheBench&lt;/strong&gt;,能使用其对服务器进行性能测试&lt;/li&gt;
+  &lt;li&gt;了解&lt;strong&gt;Mysql&lt;/strong&gt;常用查询命令&lt;/li&gt;
+  &lt;li&gt;了解&lt;strong&gt;Jekins&lt;/strong&gt;的环境搭建, 配合开发实现自动化打包,便于测试,提升效率&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Appium&lt;/strong&gt;环境搭建,&lt;strong&gt;iOS&lt;/strong&gt;与安卓自动化测试,多用于基础功能,业务相对稳定的方面,比如移动端APP的重复功能检测&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;html&amp;amp;css&lt;/strong&gt;:熟练&lt;code class=&quot;highlighter-rouge&quot;&gt;HTML/XHTML、CSS&lt;/code&gt;，熟悉页面架构和布局，对&lt;strong&gt;Web&lt;/strong&gt;标准和标签语义化有深入理解；能够独立完成对设计页面进行网页代码输出；能适当运用&lt;strong&gt;CSS3&lt;/strong&gt;使页面在现代浏览器上效果更佳；能使用合适的结构编写兼容主流浏览器的页面布局；能熟练使用&lt;strong&gt;Chrome&lt;/strong&gt;开发者工具、&lt;strong&gt;FireBug&lt;/strong&gt;、&lt;strong&gt;Fiddler&lt;/strong&gt;等工具辅助开发。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Javascript&lt;/strong&gt;:对&lt;strong&gt;JavaScript&lt;/strong&gt;基础知识的掌握，包括基本语法以及&lt;strong&gt;DOM&lt;/strong&gt;操作；&lt;/li&gt;
+  &lt;li&gt;了解&lt;strong&gt;jQuery&lt;/strong&gt;:可以通过使用 &lt;strong&gt;jQuery&lt;/strong&gt; 应用 &lt;strong&gt;JavaScript&lt;/strong&gt; 效果;可以熟练执行类似隐藏、移动以及操作其内容等任务；可以使用相应的&lt;strong&gt;jQuery&lt;/strong&gt; 对象和函数来实现网页的动态效果.&lt;/li&gt;
+  &lt;li&gt;熟练运用 &lt;strong&gt;HTML5&lt;/strong&gt; 和 &lt;strong&gt;Bootstrap&lt;/strong&gt; 前端框架搭建响应式网页，并支持 &lt;strong&gt;PC&lt;/strong&gt; 机和移动设备&lt;code class=&quot;highlighter-rouge&quot;&gt;(iPad、iPhone、Android)&lt;/code&gt;同时浏览；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;工作经历&quot;&gt;工作经历&lt;/h3&gt;
+&lt;h5 id=&quot;泰德网聚北京科技股份有限公司-2016年7月-2017年6月&quot;&gt;泰德网聚(北京)科技股份有限公司 (2016年7月-2017年6月)&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;职位: 测试工程师 公司规模:50-100人, 数字媒体管理公司&lt;/li&gt;
+  &lt;li&gt;工作描述: 主要负责聚现的分享页面,后台管理系统,移动端iOS、Andriod的版本迭代,分析需求,编写用例,维护用例,监测接口,初级页面的代码审查,提交bug,回归测试,相关文档编写.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;庄胜科技-2015年07月-2016年5月&quot;&gt;庄胜科技 （2015年/07月-2016年/5月）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;职位: web前端工程开发 互联网/电子商务 企业性质：民营 规模：20-99人&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;工作描述：制作标准优化的代码，并增加交互动态功能&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;文博科技-201503---201506月&quot;&gt;文博科技 （2015/03 - 2015/06月）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;职位: asp.net实习生 计算机软件 企业性质：民营  规模：20-99人&lt;/li&gt;
+  &lt;li&gt;工作描述：网站维护更新&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;项目&quot;&gt;项目&lt;/h3&gt;
+
+&lt;h5 id=&quot;聚现&quot;&gt;聚现&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;项目介绍: PGC内容统一资料库管理与应用,使用标准化APP工具，可以随时随地轻松实现手机直 播、图文、视频内容采集，通过网络将生产内容回传到企业资料库，进一步可以实现多场景内 容调用发布。&lt;/li&gt;
+  &lt;li&gt;职责描述:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;了解聚现的需求开发文档，收集有关产品的行为信息和数据,与产品、开发进行深入有效的沟通,了解需求及其细节表现，设计测试用例；&lt;/li&gt;
+  &lt;li&gt;执行测试用例，记录结果，提交缺陷，跟进缺陷的修改，完成测试分析报告,进行有效产品反馈,完善测试用例,优化测试覆盖率；&lt;/li&gt;
+  &lt;li&gt;推进测试的自动化, 减少重复手动的工作量,提升测试效率&lt;/li&gt;
+  &lt;li&gt;初步审查Web代码规范,协同开发与产品提升产品编码与成品质量,推进公司测试的制度完善。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;藏家圈&quot;&gt;藏家圈&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;项目介绍: 藏家圈是为广大藏品爱好者、收藏家、藏品经营者开发的一款融合交流、交易、投 资的多业务类型、多用户类型的APP。真实的还原了线下拍卖场景，为收藏家、藏品经营者提 供了更专业的管理体系、更智能的交易订单体系，同时为广大藏品爱好者提供了拍卖、一口价 购买通道，真正的实现了人人买、人人卖的藏品流通模式.&lt;/li&gt;
+  &lt;li&gt;职责描述:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;阅读藏家圈设计文档，与策划、开发及时沟通，透彻了解功能需求，根据需求文档编写测试计划和测试用例；&lt;/li&gt;
+  &lt;li&gt;执行测试用例，记录结果，提交缺陷，跟进缺陷的修改，完成测试分析报告；跟踪Bug状态并推动相关Bug得到及时合理解决;&lt;/li&gt;
+  &lt;li&gt;配合开发、策划人员解决工作中遇到的问题，并且能对项目提出合理化建议。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h6 id=&quot;靠谱旅游&quot;&gt;靠谱旅游&lt;/h6&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;项目简介：靠谱旅行网是专业的国际机票预订平台,为您提供国际航班查询,特价国际机票查询,国际机票预订等服务。靠谱旅游网站有别于普通的网站模板设计公司开发旅游网站，不将外观和视觉效果作为唯一的标准，而是在此基础上，苛刻要求前端html标准化、苛刻设计每一个页面的代码细节。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;功能描述（部分功能）：　　&lt;br /&gt;
+注册功能：使用AJAX实现无刷新技术，注册只要填写用户名，登陆密码，联系电话，填写手机号后会有一个验证码的填写。如有一项填写不对将会出现相应的提示。
+订单功能：用户填写需求信息提交订单,系统会记录这个信息。
+在旅游网站建设方面还支持机票订阅、精彩目的地、国际机场咨询、旅行助手、入境卡、同业合作、出租车服务等功能；
+网站首页是通栏布局，这种布局方式让视线不再受到方框的限制，主视觉部分还可以灵活处理，既可以向上拓展到logo和导航的顶部位置，也可以向下拓展到内容区域。首页有导航栏,国际机票搜索,靠谱大卖，套票|自由行，热门国际机场资讯，合作伙伴等模块。
+精彩目的地做了轮播图，热门城市推荐，精彩目的地资讯，国家列表。头部导航栏跟底部的友情链接模块采用共享的方式实现。
+旅游助手里包含了廉价航空 国际酒店  国际出租 机场接送 国际铁路 旅行体验。
+项目总结：商城的页面是通过html+css布局，采用原生js ,jquery实现网页动态效果，整个网站的图片都是采用异步加载，这样可提高打开网页的速度。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;责任描述：主要负责制作标准优化的代码，页面的实现以及修改 , 配合后台开发人员进行数据交互&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 18 Sep 2017 15:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/09/resume-cay/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/resume-cay/</guid>
+        
+        <category>Resume</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>英语学习- Jenkins</title>
+        <description>&lt;h3 id=&quot;单词&quot;&gt;单词&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;jenkins : 持续化集成工具,可以为JAVA,iOS,安卓项目做自动化的集成,比如自动化源代码管理,编译,打包,部署,测试;以及相配套的邮件通知,文件上传下载等&lt;/li&gt;
+  &lt;li&gt;homebrew : Mac环境下的包管理工具,可以下载一些常用的工具,如Git,SVN,openssl,cocoapods,ruby,jenkins等等&lt;/li&gt;
+  &lt;li&gt;brew : homebrew 的简称&lt;/li&gt;
+  &lt;li&gt;install : 安装&lt;/li&gt;
+  &lt;li&gt;uninstall : 卸载&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;组合命令&quot;&gt;组合命令&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;brew list 查看已经安装的工具包,比如查看是否安装了 jenkins&lt;/li&gt;
+  &lt;li&gt;brew uninstall : 卸载 包工具&lt;/li&gt;
+  &lt;li&gt;brew install   : 安装 包工具&lt;/li&gt;
+  &lt;li&gt;java -jar jenkins.war –httpPort=8081: 直接用war包安装,指定端口是8081,如果冲突报错,就换一个端口&lt;/li&gt;
+  &lt;li&gt;initialAdminPassword : 初始化密码&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;报错说明&quot;&gt;报错说明&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Address already in use : 端口被占用了,所以不能用默认的端口&lt;code class=&quot;highlighter-rouge&quot;&gt;8080&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Jenkins home directory: /Users/manajay/.jenkins found at: $user.home/.jenkins&lt;/code&gt; , jenkins的war运行后生存的目录&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;mac下安装&quot;&gt;Mac下安装&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;官网下载 war包&lt;/li&gt;
+  &lt;li&gt;切换到 war的下载目录&lt;/li&gt;
+  &lt;li&gt;执行 &lt;code class=&quot;highlighter-rouge&quot;&gt;java -jar jenkins.war --httpPort=8081&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;浏览器打开 &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:8081&lt;/code&gt;  ,如果失败,则用具体的本地&lt;strong&gt;IP&lt;/strong&gt;地址 : 比如 &lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.1.102&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;自己试验的时候 要先将 本地运行的jenkins停掉&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;mac-下jenkins运行环境&quot;&gt;Mac 下jenkins运行环境&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// war包运行的地址
+Running from: /usr/local/Cellar/jenkins/2.61/libexec/jenkins.war
+// web项目运行的工作根目录,由war包运行生成
+webroot: $user.home/.jenkins
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 18 Sep 2017 05:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/09/english-jenkins/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/english-jenkins/</guid>
+        
+        <category>English</category>
+        
+        <category>Jenkins</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>markdown基本语法</title>
+        <description>&lt;h1 id=&quot;markdown-语法和-mweb-写作使用说明&quot;&gt;Markdown 语法和 MWeb 写作使用说明&lt;/h1&gt;
+
+&lt;h2 id=&quot;markdown-的设计哲学&quot;&gt;Markdown 的设计哲学&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Markdown 的目標是實現「易讀易寫」。
+不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。
+Markdown 的語法有個主要的目的：用來作為一種網路內容的&lt;em&gt;寫作&lt;/em&gt;用語言。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h2 id=&quot;本文约定&quot;&gt;本文约定&lt;/h2&gt;
+
+&lt;p&gt;如果有写 &lt;code class=&quot;highlighter-rouge&quot;&gt;效果如下：&lt;/code&gt;， 在 MWeb 编辑状态下只有用 &lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + 4&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + R&lt;/code&gt; 预览才可以看效果。&lt;/p&gt;
+
+&lt;h2 id=&quot;标题&quot;&gt;标题&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 第一级标题 `&amp;lt;h1&amp;gt;` 
+## 第二级标题 `&amp;lt;h2&amp;gt;` 
+###### 第六级标题 `&amp;lt;h6&amp;gt;` 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;h1 id=&quot;第一级标题-h1&quot;&gt;第一级标题 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;第二级标题-h2&quot;&gt;第二级标题 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+&lt;h6 id=&quot;第六级标题-h6&quot;&gt;第六级标题 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;&lt;/h6&gt;
+
+&lt;h2 id=&quot;强调&quot;&gt;强调&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*这些文字会生成`&amp;lt;em&amp;gt;`*
+_这些文字会生成`&amp;lt;u&amp;gt;`_
+
+**这些文字会生成`&amp;lt;strong&amp;gt;`**
+__这些文字会生成`&amp;lt;strong&amp;gt;`__
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在 MWeb 中的快捷键为： &lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + U&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + I&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + B&lt;/code&gt;
+效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;这些文字会生成&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt;&lt;/em&gt;
+&lt;em&gt;这些文字会生成&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;u&amp;gt;&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;这些文字会生成&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;&lt;/strong&gt;
+&lt;strong&gt;这些文字会生成&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;换行&quot;&gt;换行&lt;/h2&gt;
+
+&lt;p&gt;四个及以上空格加回车。
+如果不想打这么多空格，只要回车就为换行，请勾选：&lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Themes&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Translate newlines to &amp;lt;br&amp;gt; tags&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;列表&quot;&gt;列表&lt;/h2&gt;
+
+&lt;h3 id=&quot;无序列表&quot;&gt;无序列表&lt;/h3&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* 项目一 无序列表 `* + 空格键`
+* 项目二
+* 项目二的子项目一 无序列表 `TAB + * + 空格键`
+* 项目二的子项目二
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在 MWeb 中的快捷键为： &lt;code class=&quot;highlighter-rouge&quot;&gt;Option + U&lt;/code&gt;
+效果如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;项目一 无序列表 &lt;code class=&quot;highlighter-rouge&quot;&gt;* + 空格键&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;项目二&lt;/li&gt;
+  &lt;li&gt;项目二的子项目一 无序列表 &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB + * + 空格键&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;项目二的子项目二&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;有序列表&quot;&gt;有序列表&lt;/h3&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 项目一 有序列表 `数字 + . + 空格键`
+2. 项目二 
+3. 项目三
+1. 项目三的子项目一 有序列表 `TAB + 数字 + . + 空格键`
+2. 项目三的子项目二
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;项目一 有序列表 &lt;code class=&quot;highlighter-rouge&quot;&gt;数字 + . + 空格键&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;项目二&lt;/li&gt;
+  &lt;li&gt;项目三&lt;/li&gt;
+  &lt;li&gt;项目三的子项目一 有序列表 &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB + 数字 + . + 空格键&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;项目三的子项目二&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;任务列表task-lists&quot;&gt;任务列表（Task lists）&lt;/h3&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[ ] 任务一 未做任务 &lt;code class=&quot;highlighter-rouge&quot;&gt;- + 空格 + [ ]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;[x] 任务二 已做任务 &lt;code class=&quot;highlighter-rouge&quot;&gt;- + 空格 + [x]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;图片&quot;&gt;图片&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
+格式: ![Alt Text](url)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Control + Shift + I&lt;/code&gt; 可插入Markdown语法。
+如果是 MWeb 的文档库中的文档，还可以用拖放图片、&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + V&lt;/code&gt; 粘贴、&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + Option + I&lt;/code&gt; 导入这三种方式来增加图片。
+效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zh.mweb.im/asset/img/set-up-git.gif&quot; alt=&quot;GitHub set up&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 &lt;code class=&quot;highlighter-rouge&quot;&gt;-w + 图片宽度&lt;/code&gt; 即可，比如说要设置上面的图片的宽度为 140，语法如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://zh.mweb.im/asset/img/set-up-git.gif&quot; alt=&quot;GitHub set up-w140&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;链接&quot;&gt;链接&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;email &amp;lt;example@example.com&amp;gt;
+[GitHub](http://github.com)
+自动生成连接  &amp;lt;http://www.github.com/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Control + Shift + L&lt;/code&gt; 可插入Markdown语法。
+如果是 MWeb 的文档库中的文档，拖放或&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + Option + I&lt;/code&gt; 导入非图片时，会生成连接。
+效果如下：&lt;/p&gt;
+
+&lt;p&gt;Email 连接： &lt;a href=&quot;mailto:example@example.com&quot;&gt;example@example.com&lt;/a&gt;
+&lt;a href=&quot;http://github.com&quot;&gt;连接标题Github网站&lt;/a&gt;
+自动生成连接像： &lt;a href=&quot;http://www.github.com/&quot;&gt;http://www.github.com/&lt;/a&gt; 这样&lt;/p&gt;
+
+&lt;h2 id=&quot;区块引用&quot;&gt;区块引用&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;某某说:
+&amp;gt; 第一行引用
+&amp;gt; 第二行费用文字
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + Shift + B&lt;/code&gt; 可插入Markdown语法。
+效果如下：&lt;/p&gt;
+
+&lt;p&gt;某某说:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;第一行引用
+第二行费用文字&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;行内代码&quot;&gt;行内代码&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;像这样即可：`&amp;lt;addr&amp;gt;` `code`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + K&lt;/code&gt; 可插入Markdown语法。
+效果如下：&lt;/p&gt;
+
+&lt;p&gt;像这样即可：&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;addr&amp;gt;&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;多行或者一段代码&quot;&gt;多行或者一段代码&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```js
+function fancyAlert(arg) {
+    if(arg) {
+    $.facebox({div:'#foo'})
+    }
+
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + Shift + K&lt;/code&gt; 可插入Markdown语法。
+效果如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fancyAlert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;facebox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#foo'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;顺序图或流程图&quot;&gt;顺序图或流程图&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```sequence
+张三-&amp;gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&amp;gt;张三: 忙得吐血，哪有时间写。
+```
+
+```flow
+st=&amp;gt;start: 开始
+e=&amp;gt;end: 结束
+op=&amp;gt;operation: 我的操作
+cond=&amp;gt;condition: 确认？
+
+st-&amp;gt;op-&amp;gt;cond
+cond(yes)-&amp;gt;e
+cond(no)-&amp;gt;op
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下（ &lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Themes&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Enable sequence &amp;amp; flow chart&lt;/code&gt; 才会看到效果 ）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sequence&quot;&gt;张三-&amp;gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&amp;gt;张三: 忙得吐血，哪有时间写。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-flow&quot;&gt;st=&amp;gt;start: 开始
+e=&amp;gt;end: 结束
+op=&amp;gt;operation: 我的操作
+cond=&amp;gt;condition: 确认？
+
+st-&amp;gt;op-&amp;gt;cond
+cond(yes)-&amp;gt;e
+cond(no)-&amp;gt;op
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更多请参考：&lt;a href=&quot;http://bramp.github.io/js-sequence-diagrams/&quot;&gt;http://bramp.github.io/js-sequence-diagrams/&lt;/a&gt;, &lt;a href=&quot;http://adrai.github.io/flowchart.js/&quot;&gt;http://adrai.github.io/flowchart.js/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;表格&quot;&gt;表格&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;第一格表头&lt;/th&gt;
+      &lt;th&gt;第二格表头&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;内容单元格 第一列第一格&lt;/td&gt;
+      &lt;td&gt;内容单元格第二列第一格&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;内容单元格 第一列第二格 多加文字&lt;/td&gt;
+      &lt;td&gt;内容单元格第二列第二格&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;删除线&quot;&gt;删除线&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;p&gt;加删除线像这样用： &lt;del&gt;删除这些&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;加删除线像这样用： &lt;del&gt;删除这些&lt;/del&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;分隔线&quot;&gt;分隔线&lt;/h2&gt;
+
+&lt;p&gt;以下三种方式都可以生成分隔线：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;***
+
+*****
+
+- - -
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;mathjax&quot;&gt;MathJax&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;块级公式：
+$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
+
+行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下（&lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Themes&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Enable MathJax&lt;/code&gt; 才会看到效果）：&lt;/p&gt;
+
+&lt;p&gt;块级公式：
+&lt;script type=&quot;math/tex&quot;&gt;x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]&lt;/p&gt;
+
+&lt;p&gt;行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$&lt;/p&gt;
+
+&lt;h2 id=&quot;脚注footnote&quot;&gt;脚注（Footnote）&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;这是一个脚注：[^sample_footnote]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;这是一个脚注：&lt;sup id=&quot;fnref:sample_footnote&quot;&gt;&lt;a href=&quot;#fn:sample_footnote&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;注释和阅读更多&quot;&gt;注释和阅读更多&lt;/h2&gt;
+
+&lt;!-- comment --&gt;
+&lt;!-- more --&gt;
+
+&lt;p&gt;Actions-&amp;gt;Insert Read More Comment &lt;em&gt;或者&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Command + .&lt;/code&gt;
+&lt;strong&gt;注&lt;/strong&gt; 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。&lt;/p&gt;
+
+&lt;h2 id=&quot;toc&quot;&gt;TOC&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[TOC]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;[TOC]&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:sample_footnote&quot;&gt;
+      &lt;p&gt;这里是脚注信息 &lt;a href=&quot;#fnref:sample_footnote&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 18 Sep 2017 05:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/09/markdown-01/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/markdown-01/</guid>
+        
+        <category>English</category>
+        
+        <category>Git</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>英语学习- Git</title>
+        <description>&lt;h3 id=&quot;单词&quot;&gt;单词&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;git 文件的版本控制工具,分布式工具&lt;/li&gt;
+  &lt;li&gt;status 状态&lt;/li&gt;
+  &lt;li&gt;add 添加&lt;/li&gt;
+  &lt;li&gt;origin 源头,起源,最初的&lt;/li&gt;
+  &lt;li&gt;master 主干 主要的&lt;/li&gt;
+  &lt;li&gt;pull 拉取, 拉&lt;/li&gt;
+  &lt;li&gt;push 推送 推动&lt;/li&gt;
+  &lt;li&gt;stash 暂存&lt;/li&gt;
+  &lt;li&gt;pop 弹出, 弹起来,跳起&lt;/li&gt;
+  &lt;li&gt;all 所有的&lt;/li&gt;
+  &lt;li&gt;switch : 切换 ,开关&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;git的组合命令&quot;&gt;git的组合命令&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git 所有的命令都要用 &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; 开头&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; 查看当前的本地仓库状态&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git pull origin master&lt;/code&gt; 从远程库拉取最新的文件到本地库,防止 直接推送报错&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git add .&lt;/code&gt; 添加 当前目录 所有的 未保存文件 到本地库&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m &quot;注释内容&quot;&lt;/code&gt; 将刚才 添加到本地库的文件 这一系列行为 的 注释添加上&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin master&lt;/code&gt; 推送本地库的修改文件到远程库&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git stash&lt;/code&gt; 将本地的修改内容添加到 本地库的暂存区,主要用于 拉取远程文件时出现冲突 而不能拉取,但又不想将修改的内容添加到本地库的问题&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git stash pop&lt;/code&gt; 将本地库暂存区的文件 再释放出来,继续编辑&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git branch -a&lt;/code&gt; 列出本地所有的分支,a 就是 all&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout 分支名称&lt;/code&gt; 根据分支名,切换分支 ,如果没有则 切换失败&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout -b 分支名称&lt;/code&gt; 根据分支名称 切换分支, 如果没有就创建一个&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;参考链接&quot;&gt;参考链接&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://rogerdudler.github.io/git-guide/index.zh.html&quot;&gt;Git 参考&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 18 Sep 2017 05:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/09/english-git/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/english-git/</guid>
+        
+        <category>English</category>
+        
+        <category>Git</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>英语学习- Linux</title>
+        <description>&lt;h3 id=&quot;单词&quot;&gt;单词&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;change : 改变&lt;/li&gt;
+  &lt;li&gt;directory : 目录&lt;/li&gt;
+  &lt;li&gt;list : 列出,列表&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;linux-组合命令&quot;&gt;Linux 组合命令&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;cd : 改变目录 ,就是上面的 change directory&lt;/li&gt;
+  &lt;li&gt;ls : list&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 17 Sep 2017 13:02:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/09/english-linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/english-linux/</guid>
+        
+        <category>English</category>
+        
+        <category>Linux</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

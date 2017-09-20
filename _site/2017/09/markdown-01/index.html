@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>markdown基本语法</title>
+  <meta name="description" content="Markdown 语法和 MWeb 写作使用说明">
+  <meta name="author" content="leopardpan">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="markdown基本语法">
+  <meta name="twitter:description" content="Markdown 语法和 MWeb 写作使用说明">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="markdown基本语法">
+  <meta property="og:description" content="Markdown 语法和 MWeb 写作使用说明">
+  
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link href="/images/favicon.png" rel="shortcut icon" type="image/png">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="canonical" href="http://localhost:4000/2017/09/markdown-01/">
+  <link rel="alternate" type="application/rss+xml" title="爱依个人站点" href="http://localhost:4000/feed.xml">
+  
+  <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
+
+<!-- 站点统计 -->
+  <script 
+  async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>  
+
+<!-- 百度统计 -->
+  
+
+<!-- google 统计 -->
+  
+
+</head>
+
+
+  <body>
+
+    <span class="mobile btn-mobile-menu">        
+      <div class="nav_container">
+         <nav class="nav-menu-item" style = "float:right">
+            <i class="nav-menu-item">
+              <a href="/#blog" title="" class="blog-button">  博客主页
+              </a>
+            </i>
+            
+                <i class="nav-menu-item">
+
+                  <a href="/archive" title="archive" class="btn-mobile-menu__icon">
+                      所有文章
+                  </a>
+                </i>
+            
+                <i class="nav-menu-item">
+
+                  <a href="/tags" title="tags" class="btn-mobile-menu__icon">
+                      标签
+                  </a>
+                </i>
+            
+                <i class="nav-menu-item">
+
+                  <a href="/about" title="about" class="btn-mobile-menu__icon">
+                      关于我
+                  </a>
+                </i>
+            
+          </nav>
+      </div>
+    </span>
+    
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url('/images/background-cover.jpg')">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <!-- 头像效果-start -->
+        <div class="ih-item circle effect right_to_left">            
+            <a href="/#blog" title="前往 爱依个人站点 的主页" class="blog-button">
+                <div class="img"><img src="/images/avatar.jpg" alt="img"></div>
+                <div class="info">
+                    <div class="info-back">
+                        <h2> 
+                            
+                                cay
+                            
+                        </h2>
+                        <p>
+                           
+                                生活/学习
+                            
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- 头像效果-end -->
+        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for 爱依个人站点" class="blog-button">爱依个人站点</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">简简单单,去生活</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">学习学习,努力努力,每天要更漂亮,哈哈哈</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+        
+        
+
+        <div class="navigation-wrapper">
+          <div>
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">博客主页</a></li>
+                
+                  <li class="navigation__item"><a href="/archive" title="archive">所有文章</a></li>
+                
+                  <li class="navigation__item"><a href="/tags" title="tags">标签</a></li>
+                
+                  <li class="navigation__item"><a href="/about" title="about">关于我</a></li>
+                
+              </ul>
+            </nav>
+          </div>          
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel-cover--overlay cover-clear"></div>
+    
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title">markdown基本语法</h1>
+    <div class="post-meta">
+      <img src="/images/calendar.png" width="20px"/> 
+      <time datetime="2017-09-18 00:00:00 +0300" itemprop="datePublished" class="post-meta__date date">2017-09-18</time>  
+         
+      <span id="busuanzi_container_page_pv"> | 阅读：<span id="busuanzi_value_page_pv"></span>次</span>
+    </p>
+    </div>
+  </header>
+
+  <section class="post">
+    <h1 id="markdown-语法和-mweb-写作使用说明">Markdown 语法和 MWeb 写作使用说明</h1>
+
+<h2 id="markdown-的设计哲学">Markdown 的设计哲学</h2>
+
+<blockquote>
+  <p>Markdown 的目標是實現「易讀易寫」。
+不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。
+Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>寫作</em>用語言。</p>
+</blockquote>
+
+<!-- more -->
+
+<h2 id="本文约定">本文约定</h2>
+
+<p>如果有写 <code class="highlighter-rouge">效果如下：</code>， 在 MWeb 编辑状态下只有用 <code class="highlighter-rouge">CMD + 4</code> 或 <code class="highlighter-rouge">CMD + R</code> 预览才可以看效果。</p>
+
+<h2 id="标题">标题</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code># 第一级标题 `&lt;h1&gt;` 
+## 第二级标题 `&lt;h2&gt;` 
+###### 第六级标题 `&lt;h6&gt;` 
+</code></pre>
+</div>
+
+<p>效果如下：</p>
+
+<h1 id="第一级标题-h1">第一级标题 <code class="highlighter-rouge">&lt;h1&gt;</code></h1>
+<h2 id="第二级标题-h2">第二级标题 <code class="highlighter-rouge">&lt;h2&gt;</code></h2>
+<h6 id="第六级标题-h6">第六级标题 <code class="highlighter-rouge">&lt;h6&gt;</code></h6>
+
+<h2 id="强调">强调</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>*这些文字会生成`&lt;em&gt;`*
+_这些文字会生成`&lt;u&gt;`_
+
+**这些文字会生成`&lt;strong&gt;`**
+__这些文字会生成`&lt;strong&gt;`__
+</code></pre>
+</div>
+
+<p>在 MWeb 中的快捷键为： <code class="highlighter-rouge">CMD + U</code>、<code class="highlighter-rouge">CMD + I</code>、<code class="highlighter-rouge">CMD + B</code>
+效果如下：</p>
+
+<p><em>这些文字会生成<code class="highlighter-rouge">&lt;em&gt;</code></em>
+<em>这些文字会生成<code class="highlighter-rouge">&lt;u&gt;</code></em></p>
+
+<p><strong>这些文字会生成<code class="highlighter-rouge">&lt;strong&gt;</code></strong>
+<strong>这些文字会生成<code class="highlighter-rouge">&lt;strong&gt;</code></strong></p>
+
+<h2 id="换行">换行</h2>
+
+<p>四个及以上空格加回车。
+如果不想打这么多空格，只要回车就为换行，请勾选：<code class="highlighter-rouge">Preferences</code> - <code class="highlighter-rouge">Themes</code> - <code class="highlighter-rouge">Translate newlines to &lt;br&gt; tags</code></p>
+
+<h2 id="列表">列表</h2>
+
+<h3 id="无序列表">无序列表</h3>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>* 项目一 无序列表 `* + 空格键`
+* 项目二
+* 项目二的子项目一 无序列表 `TAB + * + 空格键`
+* 项目二的子项目二
+</code></pre>
+</div>
+
+<p>在 MWeb 中的快捷键为： <code class="highlighter-rouge">Option + U</code>
+效果如下：</p>
+
+<ul>
+  <li>项目一 无序列表 <code class="highlighter-rouge">* + 空格键</code></li>
+  <li>项目二</li>
+  <li>项目二的子项目一 无序列表 <code class="highlighter-rouge">TAB + * + 空格键</code></li>
+  <li>项目二的子项目二</li>
+</ul>
+
+<h3 id="有序列表">有序列表</h3>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1. 项目一 有序列表 `数字 + . + 空格键`
+2. 项目二 
+3. 项目三
+1. 项目三的子项目一 有序列表 `TAB + 数字 + . + 空格键`
+2. 项目三的子项目二
+</code></pre>
+</div>
+
+<p>效果如下：</p>
+
+<ol>
+  <li>项目一 有序列表 <code class="highlighter-rouge">数字 + . + 空格键</code></li>
+  <li>项目二</li>
+  <li>项目三</li>
+  <li>项目三的子项目一 有序列表 <code class="highlighter-rouge">TAB + 数字 + . + 空格键</code></li>
+  <li>项目三的子项目二</li>
+</ol>
+
+<h3 id="任务列表task-lists">任务列表（Task lists）</h3>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+</code></pre>
+</div>
+
+<p>效果如下：</p>
+
+<ul>
+  <li>[ ] 任务一 未做任务 <code class="highlighter-rouge">- + 空格 + [ ]</code></li>
+  <li>[x] 任务二 已做任务 <code class="highlighter-rouge">- + 空格 + [x]</code></li>
+</ul>
+
+<h2 id="图片">图片</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
+格式: ![Alt Text](url)
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">Control + Shift + I</code> 可插入Markdown语法。
+如果是 MWeb 的文档库中的文档，还可以用拖放图片、<code class="highlighter-rouge">CMD + V</code> 粘贴、<code class="highlighter-rouge">CMD + Option + I</code> 导入这三种方式来增加图片。
+效果如下：</p>
+
+<p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up" /></p>
+
+<p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code class="highlighter-rouge">-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
+
+<p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up-w140" /></p>
+
+<h2 id="链接">链接</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>email &lt;example@example.com&gt;
+[GitHub](http://github.com)
+自动生成连接  &lt;http://www.github.com/&gt;
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">Control + Shift + L</code> 可插入Markdown语法。
+如果是 MWeb 的文档库中的文档，拖放或<code class="highlighter-rouge">CMD + Option + I</code> 导入非图片时，会生成连接。
+效果如下：</p>
+
+<p>Email 连接： <a href="mailto:example@example.com">example@example.com</a>
+<a href="http://github.com">连接标题Github网站</a>
+自动生成连接像： <a href="http://www.github.com/">http://www.github.com/</a> 这样</p>
+
+<h2 id="区块引用">区块引用</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>某某说:
+&gt; 第一行引用
+&gt; 第二行费用文字
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">CMD + Shift + B</code> 可插入Markdown语法。
+效果如下：</p>
+
+<p>某某说:</p>
+<blockquote>
+  <p>第一行引用
+第二行费用文字</p>
+</blockquote>
+
+<h2 id="行内代码">行内代码</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>像这样即可：`&lt;addr&gt;` `code`
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">CMD + K</code> 可插入Markdown语法。
+效果如下：</p>
+
+<p>像这样即可：<code class="highlighter-rouge">&lt;addr&gt;</code> <code class="highlighter-rouge">code</code></p>
+
+<h2 id="多行或者一段代码">多行或者一段代码</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>```js
+function fancyAlert(arg) {
+    if(arg) {
+    $.facebox({div:'#foo'})
+    }
+
+}
+```
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">CMD + Shift + K</code> 可插入Markdown语法。
+效果如下：</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="na">div</span><span class="p">:</span><span class="s1">'#foo'</span><span class="p">})</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h2 id="顺序图或流程图">顺序图或流程图</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>```sequence
+张三-&gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&gt;张三: 忙得吐血，哪有时间写。
+```
+
+```flow
+st=&gt;start: 开始
+e=&gt;end: 结束
+op=&gt;operation: 我的操作
+cond=&gt;condition: 确认？
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+```
+</code></pre>
+</div>
+
+<p>效果如下（ <code class="highlighter-rouge">Preferences</code> - <code class="highlighter-rouge">Themes</code> - <code class="highlighter-rouge">Enable sequence &amp; flow chart</code> 才会看到效果 ）：</p>
+
+<pre><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&gt;张三: 忙得吐血，哪有时间写。
+</code></pre>
+
+<pre><code class="language-flow">st=&gt;start: 开始
+e=&gt;end: 结束
+op=&gt;operation: 我的操作
+cond=&gt;condition: 确认？
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+</code></pre>
+
+<p>更多请参考：<a href="http://bramp.github.io/js-sequence-diagrams/">http://bramp.github.io/js-sequence-diagrams/</a>, <a href="http://adrai.github.io/flowchart.js/">http://adrai.github.io/flowchart.js/</a></p>
+
+<h2 id="表格">表格</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre>
+</div>
+
+<p>效果如下：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>第一格表头</th>
+      <th>第二格表头</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>内容单元格 第一列第一格</td>
+      <td>内容单元格第二列第一格</td>
+    </tr>
+    <tr>
+      <td>内容单元格 第一列第二格 多加文字</td>
+      <td>内容单元格第二列第二格</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="删除线">删除线</h2>
+
+<p>Markdown 语法：</p>
+
+<p>加删除线像这样用： <del>删除这些</del></p>
+
+<p>效果如下：</p>
+
+<p>加删除线像这样用： <del>删除这些</del></p>
+
+<h2 id="分隔线">分隔线</h2>
+
+<p>以下三种方式都可以生成分隔线：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>***
+
+*****
+
+- - -
+</code></pre>
+</div>
+
+<p>效果如下：</p>
+
+<hr />
+
+<hr />
+
+<hr />
+
+<h2 id="mathjax">MathJax</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>块级公式：
+$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
+
+行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
+</code></pre>
+</div>
+
+<p>效果如下（<code class="highlighter-rouge">Preferences</code> - <code class="highlighter-rouge">Themes</code> - <code class="highlighter-rouge">Enable MathJax</code> 才会看到效果）：</p>
+
+<p>块级公式：
+<script type="math/tex">x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}</script></p>
+
+<p>\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]</p>
+
+<p>行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$</p>
+
+<h2 id="脚注footnote">脚注（Footnote）</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>这是一个脚注：[^sample_footnote]
+</code></pre>
+</div>
+
+<p>效果如下：</p>
+
+<p>这是一个脚注：<sup id="fnref:sample_footnote"><a href="#fn:sample_footnote" class="footnote">1</a></sup></p>
+
+<h2 id="注释和阅读更多">注释和阅读更多</h2>
+
+<!-- comment -->
+<!-- more -->
+
+<p>Actions-&gt;Insert Read More Comment <em>或者</em> <code class="highlighter-rouge">Command + .</code>
+<strong>注</strong> 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。</p>
+
+<h2 id="toc">TOC</h2>
+
+<p>Markdown 语法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[TOC]
+</code></pre>
+</div>
+
+<p>效果如下：</p>
+
+<p>[TOC]</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:sample_footnote">
+      <p>这里是脚注信息 <a href="#fnref:sample_footnote" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+  </section>
+</article>
+
+<section>
+
+            <div class="content-play">
+              <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">打赏一个呗</a></p>
+              <div class="hide_box-play"></div>
+              <div class="shang_box-play">
+                <a class="shang_close-play" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="/images/payimg/close.jpg" alt="取消" /></a>
+                <div class="shang_tit-play">
+                  <p>感谢您的支持，我会继续努力的!</p>
+                </div>
+                <div class="shang_payimg">
+                    <img src="/images/payimg/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+              <div class="shang_payimg">    
+                    <img src="/images/payimg/weipayimg.jpg" alt="扫码支持" title="扫一扫" />
+                </div>
+                <div class="pay_explain">扫码打赏，你说多少就多少</div>
+                <div class="shang_payselect">
+                  <div class="pay_item checked" data-id="alipay">
+                    <span class="pay_logo"><img src="/images/payimg/alipay.jpg" alt="支付宝" /></span>
+                  </div>
+                  <div class="pay_item" data-id="weipay">
+                    <span class="pay_logo"><img src="/images/payimg/wechat.jpg" alt="微信" /></span>
+                  </div>
+                </div>
+                <div class="shang_info-play">
+                  <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript">
+            function dashangToggle(){
+              $(".hide_box-play").fadeToggle();
+              $(".shang_box-play").fadeToggle();
+            }
+            </script>
+
+            <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+            <style type="text/css">
+              .content-play{width:80%;margin-top: 20px;margin-bottom: 10px;height:40px;}
+              .hide_box-play{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+              .shang_box-play{width:540px;height:540px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:50%;top:50%;margin-left:-280px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+              .shang_box-play img{border:none;border-width:0;}
+              .dashang{display:block;width:100px;margin:5px auto;height:25px;line-height:25px;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+              .dashang:hover{opacity:0.8;padding:15px;font-size:18px;}
+              .shang_close-play{float:right;display:inline-block;
+                margin-right: 10px;margin-top: 20px;
+              }
+              .shang_logo{display:block;text-align:center;margin:20px auto;}
+              .shang_tit-play{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;background: url('/images/payimg/cy-reward-title-bg.jpg');font-family: 'Microsoft YaHei';margin-top: 7px;margin-right:2px;}
+              .shang_tit-play p{color:#a3a3a3;text-align:center;font-size:16px;}
+              .shang_payimg{width:140px;padding:10px;padding-left: 80px; /*border:6px solid #EA5F00;**/margin:0 auto;border-radius:3px;height:140px;display:inline-block;}
+              .shang_payimg img{display:inline-block;margin-right:10px;float:left;text-align:center;width:140px;height:140px; }
+              .pay_explain{text-align:center;margin:10px auto;font-size:12px;color:#545454;}
+              .shang_payselect{text-align:center;margin:0 auto;margin-top:40px;cursor:pointer;height:60px;width:500px;margin-left:110px;}
+              .shang_payselect .pay_item{display:inline-block;margin-right:140px;float:left;}
+              .shang_info-play{clear:both;}
+              .shang_info-play p,.shang_info-play a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
+            </style>
+
+       <ul class="pager">
+        
+        <li class="previous">
+            <a href="/2017/09/english-git/" data-toggle="tooltip" data-placement="top" title="英语学习- Git">上一篇：  <span>英语学习- Git</span>
+            </a>
+        </li>
+        
+        
+        <li class="next">
+            <a href="/2017/09/english-jenkins/" data-toggle="tooltip" data-placement="top" title="英语学习- Jenkins">下一篇：  <span>英语学习- Jenkins</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+<section class="post-comments">
+
+  
+    <div id="disqus_thread"></div>
+    <script>
+    
+    var disqus_config = function () {
+        this.page.url = "http://localhost:4000/2017/09/markdown-01/";
+        this.page.identifier = "/2017/09/markdown-01/";
+    };
+    var disqus_shortname = 'manajay';
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
+    
+  
+
+</section>
+
+
+            <section class="footer">
+    <footer>
+        <div class = "footer_div">  
+        <nav class="cover-navigation navigation--social">
+          <ul class="navigation">
+
+          
+          <!-- Weibo -->
+          <li class="navigation__item_social">
+            <a href="http://weibo.com/Manajay_dlj" title="@Manajay_dlj 的微博" target="_blank">
+              <i class='social fa fa-weibo fa-2x'></i>
+              <span class="label">Weibo</span>
+            </a>
+          </li>
+          
+
+          
+          <!-- Github -->
+          <li class="navigation__item_social">
+            <a href="https://github.com/manajay" title="@manajay 的 Github" target="_blank">
+              <i class='social fa fa-github fa-2x'></i>
+              <span class="label">Github</span>
+            </a>
+          </li>
+          
+          
+          
+          <!-- Twitter -->
+          <li class="navigation__item_social">
+            <a href="http://twitter.com/manajay_dlj" title="@manajay_dlj" target="_blank">
+              <i class='social fa fa-twitter fa-2x'></i>
+              <span class="label">Twitter</span>
+            </a>
+          </li>
+          
+
+          
+
+          <!-- RSS -->
+          <li class="navigation__item_social">
+            <a href="/feed.xml" rel="author" title="RSS" target="_blank">
+              <i class='social fa fa-rss fa-2x'></i>
+              <span class="label">RSS</span>
+            </a>
+          </li>
+
+          
+          <!-- Email -->
+          <li class="navigation__item_social">
+            <a href="mailto:manajay.dlj@gmail.com" title="Contact me">
+              <i class='social fa fa-envelope fa-2x'></i>
+              <span class="label">Email</span>
+            </a>
+          </li>
+          
+
+          </ul>
+        </nav>
+
+        </div>
+
+        <div class = "footer_div">  
+           <p class="copyright text-muted">
+            Copyright &copy; 爱依个人站点 2017 Theme by <a href="http://baixin.io/">leopardpan</a> |
+            <iframe
+                style="margin-left: 2px; margin-bottom:-5px;"
+                frameborder="0" scrolling="0" width="91px" height="20px"
+                src="https://ghbtns.com/github-btn.html?user=leopardpan&repo=leopardpan.github.io&type=star&count=true" >
+            </iframe>
+            </p>
+        	<div align="right">
+    			<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+          <!-- 访问统计 -->
+          <span id="busuanzi_container_site_pv">
+            本站总访问量
+            <span id="busuanzi_value_site_pv"></span>次
+          </span>
+
+        </div>
+        <div>
+    </footer>
+</section>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+  </body>
+
+</html>
