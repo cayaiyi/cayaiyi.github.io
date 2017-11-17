@@ -20,6 +20,10 @@ tags: [English,Python]
 * **elif**:或者如果
 * **for**:循环数组
 * **while**:循环判断
+* **break**:退出当前循环
+* **continue**:跳过继续循环
+* **dict**:用于关联查找
+* **get**:得到
 
 
 ### 组合命令
@@ -39,7 +43,7 @@ tags: [English,Python]
 * Python把0、空字符串''和None看成 False，其他数值和非空字符串都看成 True例如 a='' print "hello" a or 'python',结果hello python
 * `list`:使用['xxx',1,'xxx']表示集合
 * 索引从0开始,最后一个元素用-1表示
-* `oppend()`:把新元素追加到末尾
+* `append()`:把新元素追加到末尾
 * `insert()`:在集合中插入新元素,insert(0,'a')
 * `pop()`:删除集合最后一个元素,如果括号中加索引,删除索引并打印出删除的该索引
 * 替换集合中的元素语法是:变量名[索引]=替换的内容,如L=[1,2,3]  L[-1]=4
@@ -51,6 +55,10 @@ tags: [English,Python]
 * `elif`:或者如果,用于多个判断 
 * `for`:循环集合或者元组中的每个元素,语法 for 变量名 in 集合(元组列表名)打印for定义的变量名,得到列表中的元素
 * `while`:判断循环是否结束,不能迭代集合和元组的每个元素 while 表达式 :
+* `dict`:集合语法{'key':值}
+* len():函数计算集合的大小
+* get():dict提供的方法在键不存在的时候返回none
+* 
 
 
 
